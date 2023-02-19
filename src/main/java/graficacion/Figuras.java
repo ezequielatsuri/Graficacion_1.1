@@ -210,9 +210,7 @@ public class Figuras extends JFrame {
 		 r = Math.min(Math.max(r, 0), 255);
                  g = Math.min(Math.max(g, 0), 255);
                  b = Math.min(Math.max(b, 0), 255);
-	   // solo se resta a 255 el valor del RGB
-	   
-   
+
                 Color color = new Color(r, g, b); // ejemplo de creación de color RGB
                 float c = 1.0f - (float) color.getRed() / 255.0f; // valor de cian entre 0 y 1
                 float m = 1.0f - (float) color.getGreen() / 255.0f; // valor de magenta entre 0 y 1
@@ -235,6 +233,7 @@ public class Figuras extends JFrame {
 	    return new float[] {h, s, bri};
 		
 	}
+        //aaaaaaaaaaaaaaaaa
         
         public float[] RgbAHSL(int r, int g, int b) {
 		// las siguientes 3 lineas de codigo nos permite saber si los valores guardados estan entre el rango de o a 255
@@ -250,7 +249,7 @@ public class Figuras extends JFrame {
 		
 	}
         
-        public static float[] rgbToHsl(int r, int g, int b) {
+        public static float[] rgbToHsl(int r, int g, int b) {//METODO PARA CONVERTIR DEL MODELO RGB A HSL
     float red = r / 255.0f;
     float green = g / 255.0f;
     float blue = b / 255.0f;
@@ -283,12 +282,5 @@ public class Figuras extends JFrame {
     
     return new float[] {hue, saturation, luminance};
 }
-
-        
-        
-	
-        
-    
-
-	
+    	
 }
